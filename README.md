@@ -1,93 +1,61 @@
-<a name="readme-top"></a>
+# sidikovsd_portfolio — личное портфолио
 
-# Портфолио — Сидиков Содирхон (Sid)
+Личный сайт-портфолио разработчика. Проект показывает мои навыки во frontend-разработке: адаптивная вёрстка, анимации, страницы проектов, контактная форма и аккуратная подача работ.
 
-Личный сайт-портфолио front-end разработчика. Next.js, React, Framer Motion, Tailwind CSS.
-
-[![GitHub](https://img.shields.io/badge/GitHub-Sidikov213-181717?style=flat&logo=github)](https://github.com/Sidikov213)
-[![Telegram](https://img.shields.io/badge/Telegram-@sidikovsd-26A5E4?style=flat&logo=telegram)](https://t.me/sidikovsd)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-**Сайт в сети:** [sidikovsd.ru](https://sidikovsd.ru)
+**Сайт:** [sidikovsd.ru](https://sidikovsd.ru)
 
 ---
 
-## Скриншот сайта
+## Стек
+
+- Next.js
+- React
+- JavaScript
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- React Icons
+- Netlify / Vercel deploy
+
+---
+
+## Что реализовано
+
+- главная страница с краткой презентацией;
+- страницы «Обо мне», «Услуги/навыки», «Проекты», «Контакты»;
+- адаптивная вёрстка под desktop и mobile;
+- анимации и переходы через Framer Motion;
+- слайдеры проектов и навыков;
+- контактная форма;
+- подготовка под деплой.
+
+---
+
+## Скриншот
 
 ![Портфолио sidikovsd.ru](public/for-readme.png)
 
-*Главная страница — [sidikovsd.ru](https://sidikovsd.ru)*
-
 ---
 
-## Обо мне
+## Запуск локально
 
-Front-end разработчик с фокусом на React и Next.js. Делаю адаптивные сайты, думаю про UX и пользу для пользователя. Реальные проекты: сайт барбершопа Hairlab, портфолио, блог, формы и авторизация, Telegram-бот.
-
-**Стек:** JavaScript / TypeScript, React, Next.js, Tailwind CSS, Framer Motion, Swiper.
-
-**Планы:** углубление React/Next.js, Dart/Flutter, 3D и интерактив (Three.js, R3F, GSAP).
-
----
-
-## Содержание
-
-- [Скриншот сайта](#-скриншот-сайта)
-- [Структура проекта](#-структура-проекта)
-- [Запуск](#-запуск)
-- [Технологии](#-технологии)
-- [Проекты в портфолио](#-проекты-в-портфолио)
-- [Контакты](#-контакты)
-
----
-
-## Структура проекта
-
+```bash
+git clone https://github.com/Sidikov213/sidikovsd_portfolio.git
+cd sidikovsd_portfolio
+npm install --legacy-peer-deps
+npm run dev
 ```
-modern-portfolio/
-├── components/       # Компоненты (Layout, Nav, слайдеры, аватар и т.д.)
-├── pages/           # Страницы Next.js
-│   ├── index.jsx    # Главная
-│   ├── about/       # Обо мне
-│   ├── services/    # Навыки
-│   ├── work/        # Проекты
-│   ├── testimonials/# Отзывы
-│   ├── contact/     # Контакты
-│   └── _app.jsx
-├── public/          # Статика (изображения, favicon)
-├── styles/
-│   └── globals.css
-├── variants.js      # Анимации Framer Motion
-├── tailwind.config.js
-├── next.config.js
-└── package.json
+
+После запуска сайт будет доступен по адресу:
+
+```text
+http://localhost:3000
 ```
 
 ---
 
-## Запуск
+## Production build
 
-1. Установи **Node.js** и **Git**.
-
-2. Клонируй репозиторий:
-   ```bash
-   git clone https://github.com/Sidikov213/modern-portfolio.git
-   cd modern-portfolio
-   ```
-
-3. Установи зависимости:
-   ```bash
-   npm install --legacy-peer-deps
-   ```
-
-4. Запусти dev-сервер:
-   ```bash
-   npm run dev
-   ```
-
-5. Открой [http://localhost:3000](http://localhost:3000).
-
-**Сборка и продакшен:**
 ```bash
 npm run build
 npm run start
@@ -95,48 +63,57 @@ npm run start
 
 ---
 
-## Технологии
+## Структура проекта
 
-- **Next.js** — фреймворк, роутинг, SSR
-- **React** — UI
-- **Tailwind CSS** — стили
-- **Framer Motion** — анимации и переходы между страницами
-- **Swiper** — слайдеры (проекты, навыки, отзывы)
-- **react-tsparticles** — частицы на главной
-- **react-countup** — счётчики на странице «Обо мне»
-- **react-icons** — иконки
-- **@next/font** (Sora) — шрифт
+```text
+sidikovsd_portfolio/
+├── components/        # Компоненты интерфейса
+├── pages/             # Страницы Next.js
+│   ├── index.jsx
+│   ├── about/
+│   ├── services/
+│   ├── work/
+│   ├── testimonials/
+│   ├── contact/
+│   └── _app.jsx
+├── public/            # Статические файлы
+├── styles/            # Глобальные стили
+├── variants.js        # Анимации Framer Motion
+├── tailwind.config.js
+├── next.config.js
+└── package.json
+```
 
 ---
 
-## Проекты в портфолио
+## Проекты, которые показываются в портфолио
 
 | Проект | Описание | Репозиторий |
-|--------|----------|-------------|
-| Barbershop Hairlab | Реальный бизнес-сайт барбершопа | [GitHub](https://github.com/Sidikov213/Barbershop_hairlab) |
-| Портфолио (Next.js) | Основное портфолио на Next.js, TS, Tailwind | [GitHub](https://github.com/Sidikov213/my_portfolio) |
-| Blog App | Блог-приложение | [GitHub](https://github.com/Sidikov213/blog-app) |
-| Регистрация / Auth | Формы, авторизация | [GitHub](https://github.com/Sidikov213/regist_site) |
-| TG-бот (Python) | Telegram-бот | [GitHub](https://github.com/Sidikov213/TG_bot_alfha) |
+|---|---|---|
+| Hair Lab | Fullstack-система бронирования барбершопа | [GitHub](https://github.com/Sidikov213/Barbershop_hairlab) |
+| loyalty_system | Backend-сервис системы лояльности с Bitrix24 | [GitHub](https://github.com/Sidikov213/loyalty_system) |
+| url-shortener-service | Микросервис сокращения ссылок | [GitHub](https://github.com/Sidikov213/url-shortener-service) |
+| Chat_Stats | Генератор HTML-отчётов по экспортам чатов | [GitHub](https://github.com/Sidikov213/Chat_Stats) |
+| Blog App | Блог-приложение с backend и frontend | [GitHub](https://github.com/Sidikov213/blog-app) |
+
+---
+
+## Что можно улучшить дальше
+
+- обновить карточки проектов на сайте под актуальные репозитории;
+- добавить реальные скриншоты каждого проекта;
+- добавить страницу с подробным описанием backend-проектов;
+- подключить аналитику посещений;
+- улучшить SEO-метаданные для страниц.
 
 ---
 
 ## Контакты
 
-- **GitHub:** [Sidikov213](https://github.com/Sidikov213)
-- **Telegram:** [@sidikovsd](https://t.me/sidikovsd)
-- **LinkedIn:** [sidikov213](https://linkedin.com/in/sidikov213)
-
-Форма обратной связи на сайте настроена на Netlify Forms (при деплое на Netlify).
+- GitHub: [Sidikov213](https://github.com/Sidikov213)
+- Telegram: [@sidikovsd](https://t.me/sidikovsd)
+- Email: [sodirhonsidikov512@gmail.com](mailto:sodirhonsidikov512@gmail.com)
 
 ---
 
-## Деплой
-
-- **Живой сайт:** [sidikovsd.ru](https://sidikovsd.ru)
-- **Vercel:** [Документация Next.js по деплою](https://nextjs.org/docs/deployment)
-- **Netlify:** поддерживается сборка Next.js
-
----
-
-<p align="right"><a href="#readme-top">↑ Наверх</a></p>
+Проект создан как личное портфолио и витрина моих frontend/fullstack-проектов.
